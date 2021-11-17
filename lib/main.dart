@@ -83,9 +83,19 @@ class ColumnSample extends StatelessWidget {
         Expanded(
           flex: 2,
           child: Container(
-            child: const Text('hello world'),
             alignment: Alignment.center,
-            color: Colors.red,
+            foregroundDecoration: BoxDecoration(
+              backgroundBlendMode: BlendMode.exclusion,
+              gradient: LinearGradient(
+                colors: const [
+                  Colors.red,
+                  Colors.blue,
+                ],
+              ),
+            ),
+            child: Image.network(
+              'https://placekitten.com/g/1200/1200',
+            ),
           ),
         ),
         Expanded(
@@ -96,7 +106,7 @@ class ColumnSample extends StatelessWidget {
             decoration: const BoxDecoration(
               color: Colors.green,
               shape: BoxShape.circle,
-              boxShadow: const [
+              boxShadow: [
                 BoxShadow(blurRadius: 10),
               ],
               gradient: RadialGradient(
