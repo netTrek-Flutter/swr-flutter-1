@@ -77,14 +77,24 @@ class ColumnSample extends StatelessWidget {
       //     color: Colors.red,
       //   ),
       // ),
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Container(
-          child: const Text('hello world'),
-          color: Colors.red,
+        Expanded(
+          flex: 2,
+          child: Container(
+            child: const Text('hello world'),
+            alignment: Alignment.center,
+            color: Colors.red,
+          ),
         ),
-        Container(
-          child: const Text('foo bar'),
-          color: Colors.red,
+        Expanded(
+          // flex: 3,
+          child: Container(
+            child: const Text('foo bar'),
+            alignment: Alignment.center,
+            color: Colors.green,
+          ),
         ),
       ],
     );
