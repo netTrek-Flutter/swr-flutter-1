@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import 'widgets/my_bottom_navigation_bar.dart';
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       */
       home: MyHome(
-        child: const ContainerSample(),
+        child: const ColumnSample(),
       ),
     );
   }
@@ -58,6 +60,26 @@ class MyHome extends StatelessWidget {
         child: const Icon(Icons.add),
       ),
       bottomNavigationBar: const MyBottomNavigationBar(),
+    );
+  }
+}
+
+class ColumnSample extends StatelessWidget {
+  const ColumnSample({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Container(
+          child: const Text('hello world'),
+          color: Colors.red,
+        ),
+        Container(
+          child: const Text('foo bar'),
+          color: Colors.red,
+        ),
+      ],
     );
   }
 }
@@ -88,35 +110,48 @@ class ContainerSample extends StatelessWidget {
         maxHeight: 150,
       ),
 
-      decoration: BoxDecoration(
-          // color: Colors.red,
+      decoration: const BoxDecoration(
+        // color: Colors.red,
 
-          image: const DecorationImage(
-              image: NetworkImage('https://placekitten.com/g/600/450'),
-              fit: BoxFit.fill),
+        // image: const DecorationImage(
+        //     image: NetworkImage('https://placekitten.com/g/600/450'),
+        //     fit: BoxFit.fill),
 
-          // gradient: LinearGradient(
-          //   colors: [
-          //     Colors.red,
-          //     Colors.green,
-          //   ],
-          //   transform: GradientRotation(pi / 4),
-          // ),
+        gradient: LinearGradient(
+          colors: [
+            Colors.red,
+            Colors.green,
+          ],
+          begin: Alignment.center,
+          // begin: Alignment.bottomRight,
+          // end: Alignment.bottomRight,
+          transform: GradientRotation(pi / 2),
+        ),
 
+        /*
           border: Border.all(
             color: Colors.green,
             width: 5,
             style: BorderStyle.solid,
           ),
-          // border: Border(
-          //     top: BorderSide(
-          //   style: BorderStyle.solid,
-          //   color: Colors.green,
-          //   width: 5.0,
-          // )),
-          borderRadius: const BorderRadius.all(
-            Radius.circular(20),
-          )),
+
+          */
+        border: Border(
+          top: BorderSide(
+            style: BorderStyle.solid,
+            color: Colors.green,
+            width: 5.0,
+          ),
+        ),
+        // borderRadius: BorderRadius.only(
+        //   bottomLeft: Radius.circular(
+        //     20,
+        //   ),
+        // ),
+        // borderRadius: BorderRadius.all(
+        //   Radius.circular(20),
+        // ),
+      ),
 
       padding: const EdgeInsets.all(5),
 
