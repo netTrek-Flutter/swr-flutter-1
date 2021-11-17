@@ -75,12 +75,43 @@ class ContainerSample extends StatelessWidget {
     //   ),
     // );
     return Container(
+/*
       color: Colors.red,
+
       width: 150,
       height: 150,
+*/
+
+      constraints: const BoxConstraints(
+        minWidth: 100,
+        minHeight: 100,
+        maxHeight: 150,
+      ),
+
+      decoration: BoxDecoration(
+        color: Colors.red,
+      ),
+
       padding: const EdgeInsets.all(5),
+
+      margin: const EdgeInsets.all(5),
+
+      // alignment: Alignment(0, 0), // -1 -> 1 - Center 0 x 0
+      // alignment: Alignment(-1, 0),
+      // alignment: Alignment(-1, -1),
+      // alignment: Alignment(1, 1),
+      // alignment: FractionalOffset(1, 1),
+      // alignment: FractionalOffset(0.5, 0.5), // 0 -> 1 - center 0,5 x 0,5
+      // alignment: FractionalOffset.
+      // alignment: Alignment.centerRight,
+
+      // transform: Matrix4.rotationZ(0.1),
+      // transform: Matrix4.rotationZ(45 * pi / 180),
+      // transformAlignment: Alignment.center,
+      // transformAlignment: Alignment.centerRight,
+
       // padding: EdgeInsets.only(left: 5),
-      child: const Text('hello World!'),
+      child: const Text('hello World! asd ndasd '),
     );
   }
 }
