@@ -70,6 +70,13 @@ class ColumnSample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      // children: List.generate(
+      //   15,
+      //   (index) => Container(
+      //     child: Text('hello world $index'),
+      //     color: Colors.red,
+      //   ),
+      // ),
       children: [
         Container(
           child: const Text('hello world'),
