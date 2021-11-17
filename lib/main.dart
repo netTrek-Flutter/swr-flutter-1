@@ -67,10 +67,19 @@ class ContainerSample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // return const SizedBox(
+    //   width: 50,
+    //   child: ColoredBox(
+    //     color: Colors.red,
+    //     child: Text('hello World!'),
+    //   ),
+    // );
     return Container(
       color: Colors.red,
-      width: 50,
-      // height: 100,
+      width: 150,
+      height: 150,
+      padding: const EdgeInsets.all(5),
+      // padding: EdgeInsets.only(left: 5),
       child: const Text('hello World!'),
     );
   }
