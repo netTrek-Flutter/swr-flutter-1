@@ -89,8 +89,34 @@ class ContainerSample extends StatelessWidget {
       ),
 
       decoration: BoxDecoration(
-        color: Colors.red,
-      ),
+          // color: Colors.red,
+
+          image: const DecorationImage(
+              image: NetworkImage('https://placekitten.com/g/600/450'),
+              fit: BoxFit.fill),
+
+          // gradient: LinearGradient(
+          //   colors: [
+          //     Colors.red,
+          //     Colors.green,
+          //   ],
+          //   transform: GradientRotation(pi / 4),
+          // ),
+
+          border: Border.all(
+            color: Colors.green,
+            width: 5,
+            style: BorderStyle.solid,
+          ),
+          // border: Border(
+          //     top: BorderSide(
+          //   style: BorderStyle.solid,
+          //   color: Colors.green,
+          //   width: 5.0,
+          // )),
+          borderRadius: const BorderRadius.all(
+            Radius.circular(20),
+          )),
 
       padding: const EdgeInsets.all(5),
 
