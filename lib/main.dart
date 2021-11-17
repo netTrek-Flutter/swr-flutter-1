@@ -93,7 +93,17 @@ class ColumnSample extends StatelessWidget {
           child: Container(
             child: const Text('foo bar'),
             alignment: Alignment.center,
-            color: Colors.green,
+            decoration: const BoxDecoration(
+              color: Colors.green,
+              shape: BoxShape.circle,
+              boxShadow: const [
+                BoxShadow(blurRadius: 10),
+              ],
+              gradient: RadialGradient(
+                colors: const [Colors.yellow, Colors.blue],
+                stops: const [0.4, 1.0],
+              ),
+            ),
           ),
         ),
       ],
