@@ -5,18 +5,22 @@ ThemeData darkTheme = ThemeData.from(
 );
 
 ThemeData theme = ThemeData(
-    fontFamily: 'Monospace',
-    colorScheme: const ColorScheme.light(
-      primary: Colors.red,
-      secondary: Colors.deepOrangeAccent,
+  fontFamily: 'Monospace',
+  colorScheme: const ColorScheme.light(
+    primary: Colors.red,
+    secondary: Colors.deepOrangeAccent,
+  ),
+  scaffoldBackgroundColor: Colors.white,
+  textTheme: const TextTheme(
+    bodyText2: TextStyle(
+      color: Colors.black54,
+      fontWeight: FontWeight.bold,
     ),
-    scaffoldBackgroundColor: Colors.grey,
-    textTheme: const TextTheme(
-      bodyText2: TextStyle(
-        color: Colors.black54,
-        fontWeight: FontWeight.bold,
-      ),
-    ));
+  ),
+  textButtonTheme: TextButtonThemeData(
+    style: TextButton.styleFrom(primary: Colors.green),
+  ),
+);
 
 class ThemeSample extends StatelessWidget {
   const ThemeSample({

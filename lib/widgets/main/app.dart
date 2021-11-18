@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myfirstapp/widgets/samples/button_sample.dart';
 import 'package:myfirstapp/widgets/samples/theme_sample.dart';
 
 import 'home.dart';
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: child is ThemeSample ? theme : null,
+      theme: (child is ThemeSample || child is ButtonSample) ? theme : null,
       darkTheme: child is ThemeSample ? darkTheme : null,
       themeMode: ThemeMode.system,
       home: MyHome(
