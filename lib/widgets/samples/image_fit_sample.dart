@@ -48,17 +48,24 @@ class ImageFitSample extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(5),
           child: RichText(
-              text: TextSpan(style: TextStyle(color: Colors.black), children: [
-            TextSpan(
-              text: fit.toString(),
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
+            text: TextSpan(
+              style: TextStyle(color: Colors.black),
+              children: [
+                TextSpan(
+                  text: fit.toString(),
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                TextSpan(
+                  text: ' -> $text',
+                ),
+                // const TextSpan(
+                //     text: 'das macht doch spaß - oder ;)',
+                //     style: TextStyle(decoration: TextDecoration.underline)),
+              ],
             ),
-            TextSpan(
-              text: ' -> $text',
-            ),
-          ])),
+          ),
         ),
       );
     } else {
