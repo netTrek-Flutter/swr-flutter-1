@@ -11,17 +11,23 @@ class MyPainter extends CustomPainter {
   final Color color;
   final Paint _paint;
   final MyPainterForm form;
+  final PaintingStyle style;
 
-  MyPainter(
-      {required this.color, this.scalar = 1, this.form = MyPainterForm.rect})
-      : _paint = Paint()
+  Size? size;
+
+  MyPainter({
+    required this.color,
+    this.scalar = 1,
+    this.form = MyPainterForm.rect,
+    this.style = PaintingStyle.fill,
+  }) : _paint = Paint()
           ..strokeWidth = 5
-          ..style = PaintingStyle.fill
+          ..style = style
           ..color = color;
 
   @override
   void paint(Canvas canvas, Size size) {
-    print(form);
+    this.size = size;
     switch (form) {
       case MyPainterForm.oval:
         drawOval(canvas, size);
@@ -72,6 +78,8 @@ class MyPainter extends CustomPainter {
   bool operator ==(Object other) {
     return (other is MyPainter) &&
         (other.scalar == scalar) &&
+        (other.size == size) &&
+        (other.style == style) &&
         (other.color == color);
   }
 
@@ -86,6 +94,7 @@ class CustomPainterSample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         // crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
         children: const [
@@ -122,10 +131,10 @@ class PaintForm extends StatelessWidget {
         form: form,
       ),
       foregroundPainter: MyPainter(
-        color: Colors.black.withOpacity(0.2),
-        form: form,
-        scalar: .75,
-      ),
+          color: Colors.black.withOpacity(0.3),
+          form: form,
+          scalar: .75,
+          style: PaintingStyle.stroke),
       child: SizedBox(
         width: 300,
         height: 180,

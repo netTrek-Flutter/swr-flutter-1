@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myfirstapp/widgets/main/app.dart';
-import 'package:myfirstapp/widgets/private/media_query_sample.dart';
-import 'package:myfirstapp/widgets/private/stack_sample.dart';
+import 'package:myfirstapp/widgets/samples/media_query_sample.dart';
+import 'package:myfirstapp/widgets/samples/stack_sample.dart';
 import 'package:myfirstapp/widgets/samples/button_sample.dart';
 import 'package:myfirstapp/widgets/samples/column_sample.dart';
 import 'package:myfirstapp/widgets/samples/container_sample.dart';
@@ -14,6 +14,7 @@ import 'package:myfirstapp/widgets/samples/image_sample.dart';
 import 'package:myfirstapp/widgets/samples/svg_sample.dart';
 import 'package:myfirstapp/widgets/samples/text_sample.dart';
 import 'package:myfirstapp/widgets/samples/theme_sample.dart';
+import 'package:myfirstapp/widgets/samples/transform_sample.dart';
 
 /**
  * AUFGABE
@@ -37,8 +38,8 @@ void main() {
   // runApp(const MyApp(child: SvgSample()));
   // runApp(const MyApp(child: DrawSample()));
   // runApp(const MyApp(child: ButtonSample()));
-  runApp(const MyApp(child: CustomPainterSample()));
-  // runApp(const MyApp(child: TransformSample()));
+  // runApp(const MyApp(child: CustomPainterSample()));
+  runApp(const MyApp(child: TransformSample()));
   // runApp(const MyApp(child: StackSample()));
   // setPreferredOrientations();
   // runApp(const MyApp(child: MediaQuerySample()));
