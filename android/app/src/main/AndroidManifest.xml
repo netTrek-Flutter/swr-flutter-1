@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="de.swr.newszone.myfirstapp">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
    <application
         android:label="myfirstapp"
         android:icon="@mipmap/ic_launcher">

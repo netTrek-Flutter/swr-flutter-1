@@ -46,3 +46,4 @@ app.*.map.json
 /android/app/release
 
 Flutter kurs.pdf
+/lib/widgets/private/
