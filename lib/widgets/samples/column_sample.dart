@@ -24,7 +24,6 @@ class ColumnSample extends StatelessWidget {
             ),
           ),
         ),
-        const Spacer(),
         Expanded(
           flex: 2,
           child: Container(
