@@ -20,7 +20,8 @@ class SvgSample extends StatelessWidget {
           height: 300,
           child: SvgPicture.network(
             'https://upload.wikimedia.org/wikipedia/commons/3/30/SWR_Dachmarke_SW_logo.svg',
-            color: Colors.blueAccent,
+            color: Colors.black,
+            // color: Colors.blueAccent,
             fit: BoxFit.fitWidth,
           ),
         ),
