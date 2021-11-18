@@ -24,6 +24,13 @@ class ColumnSample extends StatelessWidget {
             ),
           ),
         ),
+        // Container(
+        //   height: 100,
+        // ),
+        // const Text('hello world'),
+        const Spacer(
+          flex: 1,
+        ),
         Expanded(
           flex: 2,
           child: Container(
