@@ -11,6 +11,7 @@ import 'package:myfirstapp/widgets/samples/gradient_magic_sample.dart';
 import 'package:myfirstapp/widgets/samples/icon_sample.dart';
 import 'package:myfirstapp/widgets/samples/image_fit_sample.dart';
 import 'package:myfirstapp/widgets/samples/image_sample.dart';
+// import 'package:myfirstapp/widgets/samples/stack_sample_new.dart';
 import 'package:myfirstapp/widgets/samples/svg_sample.dart';
 import 'package:myfirstapp/widgets/samples/text_sample.dart';
 import 'package:myfirstapp/widgets/samples/theme_sample.dart';
@@ -39,8 +40,8 @@ void main() {
   // runApp(const MyApp(child: DrawSample()));
   // runApp(const MyApp(child: ButtonSample()));
   // runApp(const MyApp(child: CustomPainterSample()));
-  runApp(const MyApp(child: TransformSample()));
-  // runApp(const MyApp(child: StackSample()));
+  // runApp(const MyApp(child: TransformSample()));
+  runApp(const MyApp(child: StackSample()));
   // setPreferredOrientations();
   // runApp(const MyApp(child: MediaQuerySample()));
 }
