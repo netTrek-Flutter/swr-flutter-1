@@ -74,7 +74,7 @@ class GradientMagicSample extends StatelessWidget {
               ],
               gradient: RadialGradient(
                 colors: const [Colors.yellow, Colors.blue],
-                stops: const [0.2, 1.0],
+                stops: const [0.1, 1.0],
               ),
             ),
           ),
