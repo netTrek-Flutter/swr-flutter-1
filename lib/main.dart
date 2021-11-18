@@ -9,8 +9,18 @@ import 'package:myfirstapp/widgets/samples/gradient_magic_sample.dart';
 import 'package:myfirstapp/widgets/samples/icon_sample.dart';
 import 'package:myfirstapp/widgets/samples/image_fit_sample.dart';
 import 'package:myfirstapp/widgets/samples/image_sample.dart';
+import 'package:myfirstapp/widgets/samples/svg_sample.dart';
 import 'package:myfirstapp/widgets/samples/text_sample.dart';
 import 'package:myfirstapp/widgets/samples/theme_sample.dart';
+
+/**
+ * AUFGABE
+ * Image kann keine SVGs darstellen!
+ * - Suche unter https://pub.dev/ nach eine Packet, dass SVGs darstellen kann
+ * - Stelle sicher, dass das Packet mit Dart 2 und dem Flutter Framework kompatibel ist
+ * - installiere das Packet
+ * - Stelle eine SVG dar (freigestellt ob über's Netzwerk oder Assets)
+ */
 
 void main() {
   // runApp(const MyApp());
@@ -21,7 +31,8 @@ void main() {
   // runApp(const MyApp(child: TextSample()));
   // runApp(const MyApp(child: IconSample()));
   // runApp(const MyApp(child: ImageSample()));
-  runApp(const MyApp(child: ImageFitSample()));
+  // runApp(const MyApp(child: ImageFitSample()));
+  runApp(const MyApp(child: SvgSample()));
   // runApp(const MyApp(child: ButtonSample()));
   // runApp(const MyApp(child: CustomPainterSample()));
   // runApp(const MyApp(child: TransformSample()));
