@@ -9,6 +9,17 @@ class ButtonSample extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        TextButtonTheme(
+          data: TextButtonThemeData(
+              style: TextButton.styleFrom(
+            primary: Colors.orange,
+          )),
+          child: TextButton(
+            // onPressed: null, //disabled
+            onPressed: () => print('textbtn clicked'),
+            child: Text('hello text btn'),
+          ),
+        ),
         TextButton(
             // onPressed: null, //disabled
             onPressed: () => print('textbtn clicked'),

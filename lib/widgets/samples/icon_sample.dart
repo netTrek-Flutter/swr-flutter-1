@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:myfirstapp/widgets/common/my_flutter_icons_icons.dart';
 
 class IconSample extends StatelessWidget {
   const IconSample({Key? key}) : super(key: key);
@@ -8,6 +9,7 @@ class IconSample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        const Icon(MyFlutterIcons.nettrek_logo), // Material Icons
         const Icon(Icons.access_alarm), // Material Icons
         const Icon(CupertinoIcons.alarm), // Cupertion Icons
         Icon(Icons.adaptive.flip_camera), // Adaptiv
@@ -21,6 +23,15 @@ class IconSample extends StatelessWidget {
         ), // Adaptiv
         Icon(
           Icons.adaptive.flip_camera,
+          color: Colors.red,
+          size: 48, // default
+        ), // Adaptiv
+        const Icon(
+          MyFlutterIcons.nettrek_logo,
+          size: 48, // default
+        ), // Adaptiv
+        const Icon(
+          MyFlutterIcons.sentiment_very_dissatisfied,
           color: Colors.red,
           size: 48, // default
         ), // Adaptiv
