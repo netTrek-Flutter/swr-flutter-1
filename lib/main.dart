@@ -7,6 +7,7 @@ import 'package:myfirstapp/widgets/samples/column_sample.dart';
 import 'package:myfirstapp/widgets/samples/container_sample.dart';
 import 'package:myfirstapp/widgets/samples/gradient_magic_sample.dart';
 import 'package:myfirstapp/widgets/samples/icon_sample.dart';
+import 'package:myfirstapp/widgets/samples/image_fit_sample.dart';
 import 'package:myfirstapp/widgets/samples/image_sample.dart';
 import 'package:myfirstapp/widgets/samples/text_sample.dart';
 import 'package:myfirstapp/widgets/samples/theme_sample.dart';
@@ -19,7 +20,8 @@ void main() {
   // runApp(const MyApp(child: ColumnSample()));
   // runApp(const MyApp(child: TextSample()));
   // runApp(const MyApp(child: IconSample()));
-  runApp(const MyApp(child: ImageSample()));
+  // runApp(const MyApp(child: ImageSample()));
+  runApp(const MyApp(child: ImageFitSample()));
   // runApp(const MyApp(child: ButtonSample()));
   // runApp(const MyApp(child: CustomPainterSample()));
   // runApp(const MyApp(child: TransformSample()));

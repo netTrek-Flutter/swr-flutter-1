@@ -10,7 +10,9 @@ class ImageSample extends StatelessWidget {
     return Column(
       children: [
         Image.network('https://placekitten.com/g/240/180'),
-        Image.asset('assets/images/450.jpeg')
+        Image.asset(
+          'assets/images/450.jpeg',
+        )
       ],
     );
   }
