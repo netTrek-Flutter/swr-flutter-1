@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:myfirstapp/widgets/main/app.dart';
-import 'package:myfirstapp/widgets/private/futur_builder_sample.dart';
-import 'package:myfirstapp/widgets/private/grid_view_sample.dart';
+import 'package:myfirstapp/widgets/samples/futur_builder_sample.dart';
+import 'package:myfirstapp/widgets/samples/grid_view_sample.dart';
 import 'package:myfirstapp/widgets/samples/future_sample_with_posts.dart';
 import 'package:myfirstapp/widgets/samples/hello_word.dart';
 import 'package:myfirstapp/widgets/samples/inherited_widget_sample.dart';
 import 'package:myfirstapp/widgets/samples/list_view_sample.dart';
-import 'package:myfirstapp/widgets/private/list_view_statefull_sample.dart';
-import 'package:myfirstapp/widgets/private/sliver_view_sample.dart';
+import 'package:myfirstapp/widgets/samples/list_view_statefull_sample.dart';
+import 'package:myfirstapp/widgets/samples/sliver_view_sample.dart';
 import 'package:myfirstapp/widgets/samples/media_query_sample.dart';
 import 'package:myfirstapp/widgets/samples/stack_sample.dart';
 import 'package:myfirstapp/widgets/samples/button_sample.dart';
@@ -58,12 +58,9 @@ void main() {
   runApp(const MyApp(child: FutureBuilderSample()));
   runApp(const MyApp(child: ListViewSample()));
   runApp(const MyApp(child: SliverViewSample()));
+  // runApp(const MyApp(child: Zustand()));
+  runApp(const MyApp(child: GridViewSample()));
 */
 
-  runApp(const MyApp(child: Zustand()));
-
-/*
-  runApp(const MyApp(child: GridViewSample()));
   runApp(const MyApp(child: ListViewStatefulSample()));
-  */
 }

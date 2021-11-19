@@ -20,7 +20,7 @@ class _ZustandState extends State<Zustand> {
               num++;
             });
           },
-          child: Text('klick mich'))
+          child: const Text('klick mich'))
     ]);
   }
 }
