@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:myfirstapp/widgets/private/bloc_sample/post_bloc.dart';
+import 'package:myfirstapp/widgets/samples/bloc_sample/post_bloc.dart';
 import 'package:myfirstapp/widgets/samples/button_sample.dart';
 import 'package:myfirstapp/widgets/samples/theme_sample.dart';
 
