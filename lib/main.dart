@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myfirstapp/widgets/main/app.dart';
 import 'package:myfirstapp/widgets/private/futur_builder_sample.dart';
 import 'package:myfirstapp/widgets/private/grid_view_sample.dart';
-import 'package:myfirstapp/widgets/private/inherited_widget_sample.dart';
+import 'package:myfirstapp/widgets/samples/inherited_widget_sample.dart';
 import 'package:myfirstapp/widgets/private/list_view_sample.dart';
 import 'package:myfirstapp/widgets/private/list_view_statefull_sample.dart';
 import 'package:myfirstapp/widgets/private/sliver_view_sample.dart';
@@ -33,27 +33,32 @@ import 'package:myfirstapp/widgets/samples/transform_sample.dart';
  */
 
 void main() {
-  // runApp(const MyApp());
-  // runApp(const MyApp(child: ThemeSample()));
-  // runApp(const MyApp(child: ContainerSample()));
-  // runApp(const MyApp(child: GradientMagicSample()));
-  // runApp(const MyApp(child: ColumnSample()));
-  // runApp(const MyApp(child: TextSample()));
-  // runApp(const MyApp(child: IconSample()));
-  // runApp(const MyApp(child: ImageSample()));
-  // runApp(const MyApp(child: ImageFitSample()));
-  // runApp(const MyApp(child: SvgSample()));
-  // runApp(const MyApp(child: DrawSample()));
-  // runApp(const MyApp(child: ButtonSample()));
-  // runApp(const MyApp(child: CustomPainterSample()));
-  // runApp(const MyApp(child: TransformSample()));
-  // runApp(const MyApp(child: StackSample()));
-  // setPreferredOrientations();
-  // runApp(const MyApp(child: MediaQuerySample()));
-  // runApp(const MyApp(child: InheritedWidgetSample()));
-  // runApp(const MyApp(child: FutureBuilderSample()));
-  // runApp(const MyApp(child: ListViewSample()));
-  // runApp(const MyApp(child: GridViewSample()));
-  // runApp(const MyApp(child: SliverViewSample()));
+/*
+  runApp(const MyApp());
+  runApp(const MyApp(child: ThemeSample()));
+  runApp(const MyApp(child: ContainerSample()));
+  runApp(const MyApp(child: GradientMagicSample()));
+  runApp(const MyApp(child: ColumnSample()));
+  runApp(const MyApp(child: TextSample()));
+  runApp(const MyApp(child: IconSample()));
+  runApp(const MyApp(child: ImageSample()));
+  runApp(const MyApp(child: ImageFitSample()));
+  runApp(const MyApp(child: SvgSample()));
+  runApp(const MyApp(child: ButtonSample()));
+  runApp(const MyApp(child: DrawSample()));
+  runApp(const MyApp(child: CustomPainterSample()));
+  runApp(const MyApp(child: TransformSample()));
+  runApp(const MyApp(child: StackSample()));
+  setPreferredOrientations();
+  runApp(const MyApp(child: MediaQuerySample()));
+*/
+
+  runApp(const MyApp(child: InheritedWidgetSample()));
+/*
+  runApp(const MyApp(child: FutureBuilderSample()));
+  runApp(const MyApp(child: ListViewSample()));
+  runApp(const MyApp(child: GridViewSample()));
+  runApp(const MyApp(child: SliverViewSample()));
   runApp(const MyApp(child: ListViewStatefulSample()));
+  */
 }
