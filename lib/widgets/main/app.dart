@@ -6,8 +6,9 @@ import 'home.dart';
 
 class MyApp extends StatelessWidget {
   final Widget? child;
+  final Navigator? navigator;
 
-  const MyApp({Key? key, this.child}) : super(key: key);
+  const MyApp({Key? key, this.child, this.navigator}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +16,7 @@ class MyApp extends StatelessWidget {
       theme: (child is ThemeSample || child is ButtonSample) ? theme : null,
       darkTheme: child is ThemeSample ? darkTheme : null,
       themeMode: ThemeMode.system,
-      home: MyHome(
-        child: child,
-      ),
+      home: (navigator != null) ? navigator : MyHome(child: child),
     );
   }
 }
