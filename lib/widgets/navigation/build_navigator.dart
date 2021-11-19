@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:myfirstapp/widgets/navigation/build_scaffold.dart';
-import 'package:myfirstapp/widgets/private/grid_view_sample.dart';
-import 'package:myfirstapp/widgets/private/list_view_sample.dart';
+import 'package:myfirstapp/widgets/samples/grid_view_sample.dart';
 import 'package:myfirstapp/widgets/samples/image_fit_sample.dart';
+import 'package:myfirstapp/widgets/samples/list_view_sample.dart';
 
 const page_list = 'list';
 const page_image = 'image';

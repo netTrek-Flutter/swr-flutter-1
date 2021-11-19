@@ -1,30 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myfirstapp/widgets/main/app.dart';
-import 'package:myfirstapp/widgets/navigation/build_navigator.dart';
 import 'package:myfirstapp/widgets/private/bloc_sample/bloc_builder_sample.dart';
 import 'package:myfirstapp/widgets/private/bloc_sample/list_view_with_bloc_builder_sample.dart';
-import 'package:myfirstapp/widgets/private/futur_builder_sample.dart';
-import 'package:myfirstapp/widgets/private/grid_view_sample.dart';
-import 'package:myfirstapp/widgets/private/inherited_widget_sample.dart';
-import 'package:myfirstapp/widgets/private/list_view_sample.dart';
-import 'package:myfirstapp/widgets/private/list_view_statefull_sample.dart';
-import 'package:myfirstapp/widgets/private/sliver_view_sample.dart';
-import 'package:myfirstapp/widgets/samples/media_query_sample.dart';
-import 'package:myfirstapp/widgets/samples/stack_sample.dart';
-import 'package:myfirstapp/widgets/samples/button_sample.dart';
-import 'package:myfirstapp/widgets/samples/column_sample.dart';
-import 'package:myfirstapp/widgets/samples/container_sample.dart';
-import 'package:myfirstapp/widgets/samples/custom_painter_sample.dart';
-import 'package:myfirstapp/widgets/samples/draw_sample.dart';
-import 'package:myfirstapp/widgets/samples/gradient_magic_sample.dart';
-import 'package:myfirstapp/widgets/samples/icon_sample.dart';
-import 'package:myfirstapp/widgets/samples/image_fit_sample.dart';
-import 'package:myfirstapp/widgets/samples/image_sample.dart';
-// import 'package:myfirstapp/widgets/samples/stack_sample_new.dart';
-import 'package:myfirstapp/widgets/samples/svg_sample.dart';
-import 'package:myfirstapp/widgets/samples/text_sample.dart';
-import 'package:myfirstapp/widgets/samples/theme_sample.dart';
-import 'package:myfirstapp/widgets/samples/transform_sample.dart';
 
 /**
  * AUFGABE
@@ -59,13 +36,13 @@ void main() {
   // runApp(const MyApp(child: GridViewSample()));
   // runApp(const MyApp(child: SliverViewSample()));
   // runApp(const MyApp(child: ListViewStatefulSample()));
-  // runApp(const MyApp(
-  //   child: BlocBuilderSample(),
-  //   enableBloc: true,
-  // ));
+  runApp(const MyApp(
+    child: BlocBuilderSample(),
+    enableBloc: true,
+  ));
   // runApp(const MyApp(
   //   child: ListViewWithBlocBuilderSample(),
   //   enableBloc: true,
   // ));
-  runApp(MyApp(navigator: buildNavigator()));
+  // runApp(MyApp(navigator: buildNavigator()));
 }
