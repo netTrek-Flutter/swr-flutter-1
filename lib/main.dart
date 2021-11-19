@@ -41,9 +41,9 @@ void main() {
   //   child: BlocBuilderSample(),
   //   enableBloc: true,
   // ));
-  runApp(const MyApp(
-    child: ListViewWithBlocBuilderSample(),
-    enableBloc: true,
-  ));
-  // runApp(MyApp(navigator: buildNavigator()));
+  // runApp(const MyApp(
+  //   child: ListViewWithBlocBuilderSample(),
+  //   enableBloc: true,
+  // ));
+  runApp(MyApp(navigator: buildNavigator()));
 }

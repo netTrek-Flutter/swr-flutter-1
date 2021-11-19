@@ -24,11 +24,11 @@ class MyBottomNavigationBar extends StatelessWidget {
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.camera),
-          label: 'Camera',
+          label: 'List',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.chat),
-          label: 'Chat',
+          label: 'Grid',
         )
       ],
     );
