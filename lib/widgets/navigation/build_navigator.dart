@@ -3,6 +3,7 @@ import 'package:myfirstapp/widgets/navigation/build_scaffold.dart';
 import 'package:myfirstapp/widgets/samples/grid_view_sample.dart';
 import 'package:myfirstapp/widgets/samples/image_fit_sample.dart';
 import 'package:myfirstapp/widgets/samples/list_view_sample.dart';
+import 'package:myfirstapp/widgets/samples/list_view_statefull_sample.dart';
 
 const page_list = 'list';
 const page_image = 'image';
@@ -23,7 +24,7 @@ Navigator buildNavigator() {
         case page_list:
           return MaterialPageRoute(
               builder: (context) => buildScaffold(
-                  child: const ListViewSample(),
+                  child: const ListViewStatefulSample(),
                   appBarTitle: routeSettings.name));
         case page_gird:
           return MaterialPageRoute(
