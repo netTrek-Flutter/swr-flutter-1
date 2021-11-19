@@ -56,12 +56,12 @@ void main() {
   runApp(const MyApp(child: FutureSampleWithPosts()));
   runApp(const MyApp(child: FutureBuilderSample()));
   runApp(const MyApp(child: ListViewSample()));
-  runApp(const MyApp(child: GridViewSample()));
 */
 
-  runApp(const MyApp(child: ListViewStatefulSample()));
+  runApp(const MyApp(child: SliverViewSample()));
 
 /*
-  runApp(const MyApp(child: SliverViewSample()));
+  runApp(const MyApp(child: GridViewSample()));
+  runApp(const MyApp(child: ListViewStatefulSample()));
   */
 }
