@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myfirstapp/widgets/common/my_bottom_navigation_bar.dart';
+import 'package:myfirstapp/widgets/navigation/build_scaffold.dart';
 
 class MyHome extends StatelessWidget {
   final Widget? child;
@@ -8,16 +8,6 @@ class MyHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: child,
-      appBar: AppBar(
-        title: const Text('App Title'),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => print('clicked'),
-        child: const Icon(Icons.add),
-      ),
-      bottomNavigationBar: const MyBottomNavigationBar(),
-    );
+    return buildScaffold(child: child);
   }
 }

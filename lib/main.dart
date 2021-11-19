@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:myfirstapp/widgets/main/app.dart';
+import 'package:myfirstapp/widgets/navigation/build_navigator.dart';
+import 'package:myfirstapp/widgets/private/bloc_sample/bloc_builder_sample.dart';
+import 'package:myfirstapp/widgets/private/bloc_sample/list_view_with_bloc_builder_sample.dart';
 import 'package:myfirstapp/widgets/private/futur_builder_sample.dart';
 import 'package:myfirstapp/widgets/private/grid_view_sample.dart';
 import 'package:myfirstapp/widgets/private/inherited_widget_sample.dart';
@@ -55,5 +58,14 @@ void main() {
   // runApp(const MyApp(child: ListViewSample()));
   // runApp(const MyApp(child: GridViewSample()));
   // runApp(const MyApp(child: SliverViewSample()));
-  runApp(const MyApp(child: ListViewStatefulSample()));
+  // runApp(const MyApp(child: ListViewStatefulSample()));
+  // runApp(const MyApp(
+  //   child: BlocBuilderSample(),
+  //   enableBloc: true,
+  // ));
+  // runApp(const MyApp(
+  //   child: ListViewWithBlocBuilderSample(),
+  //   enableBloc: true,
+  // ));
+  runApp(MyApp(navigator: buildNavigator()));
 }
