@@ -4,7 +4,7 @@ import 'package:myfirstapp/widgets/private/futur_builder_sample.dart';
 import 'package:myfirstapp/widgets/private/grid_view_sample.dart';
 import 'package:myfirstapp/widgets/samples/future_sample_with_posts.dart';
 import 'package:myfirstapp/widgets/samples/inherited_widget_sample.dart';
-import 'package:myfirstapp/widgets/private/list_view_sample.dart';
+import 'package:myfirstapp/widgets/samples/list_view_sample.dart';
 import 'package:myfirstapp/widgets/private/list_view_statefull_sample.dart';
 import 'package:myfirstapp/widgets/private/sliver_view_sample.dart';
 import 'package:myfirstapp/widgets/samples/media_query_sample.dart';
@@ -52,15 +52,16 @@ void main() {
   runApp(const MyApp(child: StackSample()));
   setPreferredOrientations();
   runApp(const MyApp(child: MediaQuerySample()));
-*/
-
-  // runApp(const MyApp(child: InheritedWidgetSample()));
+  runApp(const MyApp(child: InheritedWidgetSample()));
   runApp(const MyApp(child: FutureSampleWithPosts()));
-/*
   runApp(const MyApp(child: FutureBuilderSample()));
   runApp(const MyApp(child: ListViewSample()));
   runApp(const MyApp(child: GridViewSample()));
-  runApp(const MyApp(child: SliverViewSample()));
+*/
+
   runApp(const MyApp(child: ListViewStatefulSample()));
+
+/*
+  runApp(const MyApp(child: SliverViewSample()));
   */
 }
