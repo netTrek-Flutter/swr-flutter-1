@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myfirstapp/widgets/main/app.dart';
 import 'package:myfirstapp/widgets/private/futur_builder_sample.dart';
 import 'package:myfirstapp/widgets/private/grid_view_sample.dart';
+import 'package:myfirstapp/widgets/samples/future_sample_with_posts.dart';
 import 'package:myfirstapp/widgets/samples/inherited_widget_sample.dart';
 import 'package:myfirstapp/widgets/private/list_view_sample.dart';
 import 'package:myfirstapp/widgets/private/list_view_statefull_sample.dart';
@@ -53,7 +54,8 @@ void main() {
   runApp(const MyApp(child: MediaQuerySample()));
 */
 
-  runApp(const MyApp(child: InheritedWidgetSample()));
+  // runApp(const MyApp(child: InheritedWidgetSample()));
+  runApp(const MyApp(child: FutureSampleWithPosts()));
 /*
   runApp(const MyApp(child: FutureBuilderSample()));
   runApp(const MyApp(child: ListViewSample()));

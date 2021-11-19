@@ -104,3 +104,22 @@ class MyInfo extends InheritedWidget {
     return username != old.username;
   }
 }
+
+class MyValu extends InheritedWidget {
+  final int val;
+  const MyValu({
+    Key? key,
+    required Widget child,
+    required this.val,
+  }) : super(key: key, child: child);
+
+  static MyValu? of(BuildContext context) {
+    final MyValu? result = context.dependOnInheritedWidgetOfExactType<MyValu>();
+    return result;
+  }
+
+  @override
+  bool updateShouldNotify(MyValu old) {
+    return val != old.val;
+  }
+}

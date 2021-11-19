@@ -9,18 +9,21 @@ class PostService {
 
   PostService({this.url = 'https://jsonplaceholder.typicode.com/posts'});
   Future<PostModel> getPostById(int id) async {
+    String? errMsg;
     try {
       final response = await http.get(Uri.parse('$url/$id'));
       if (response.statusCode == 200) {
         return PostModel.fromJson(jsonDecode(response.body));
       } else {
-        throw Exception('Failed to load Post with id:= $id ');
+        errMsg = 'Failed to load Post with id:= $id';
       }
     } catch (err) {
-      throw Exception('Failed to load Post with id:= $id because -> $err ');
+      errMsg = 'Failed to load Post with id:= $id because -> $err ';
     }
+    throw Exception(errMsg);
   }
 
+  // hier fehlt noch die Fehlermedung
   Future<PostModel> createPost(PostModel post) async {
     final response = await http.post(Uri.parse('$url'),
         body: post.toJsonString(true),
@@ -35,6 +38,7 @@ class PostService {
   }
 
   Future<List<PostModel>> getPosts() async {
+    String? errMsg;
     try {
       final response = await http.get(Uri.parse('$url'));
       if (response.statusCode == 200) {
@@ -42,10 +46,11 @@ class PostService {
             .map((post) => PostModel.fromJson(post))
             .toList();
       } else {
-        throw Exception('Failed to load Posts');
+        errMsg = 'Failed to load Posts';
       }
     } catch (err) {
-      throw Exception('Failed to load Posts because -> $err ');
+      errMsg = 'Failed to load Posts because -> $err ';
     }
+    throw Exception(errMsg);
   }
 }
