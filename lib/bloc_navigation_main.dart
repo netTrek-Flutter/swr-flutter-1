@@ -52,9 +52,9 @@ class MyBlocApp extends StatelessWidget {
       builder: (context, state) {
         return Scaffold(
           appBar: AppBar(),
-          body: SingleChildScrollView(
-            child: state.routes[state.selected] ??
-                Column(
+          body: state.routes[state.selected] ??
+              SingleChildScrollView(
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: state.routes.keys
@@ -68,7 +68,7 @@ class MyBlocApp extends StatelessWidget {
                       )
                       .toList(),
                 ),
-          ),
+              ),
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: state.routes.containsKey(state.selected)
                 ? state.routes.keys.first == state.selected
