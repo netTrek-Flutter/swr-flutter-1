@@ -35,7 +35,7 @@ main() {
     BlocProvider(
       create: (context) => NavigationBloc(
         {
-          'app': const MyApp(),
+          'app': MyApp(),
           'theme': const ThemeSample(),
           'container': const ContainerSample(),
           'gradient': const GradientMagicSample(),
@@ -57,13 +57,13 @@ main() {
           'grid': const GridViewSample(),
           'sliver': const SliverViewSample(),
           'list view stfull': const ListViewStatefulSample(),
-          'bloc builder': const MyApp(
+          'bloc builder': MyApp(
             enableBloc: true,
-            child: BlocBuilderSample(),
+            child: const BlocBuilderSample(),
           ),
-          'bloc list': const MyApp(
+          'bloc list': MyApp(
             enableBloc: true,
-            child: ListViewWithBlocBuilderSample(),
+            child: const ListViewWithBlocBuilderSample(),
           ),
           'navigator': MyApp(navigator: buildNavigator()),
         },
