@@ -3,6 +3,7 @@ import 'package:myfirstapp/widgets/main/app.dart';
 import 'package:myfirstapp/widgets/navigation/build_navigator.dart';
 import 'package:myfirstapp/widgets/samples/bloc_sample/bloc_builder_sample.dart';
 import 'package:myfirstapp/widgets/samples/bloc_sample/list_view_with_bloc_builder_sample.dart';
+import 'package:myfirstapp/widgets/samples/cubit_sample/bloc_builder_4_cubit_sample.dart';
 
 /**
  * AUFGABE
@@ -14,36 +15,40 @@ import 'package:myfirstapp/widgets/samples/bloc_sample/list_view_with_bloc_build
  */
 
 void main() {
-  // runApp(const MyApp());
-  // runApp(const MyApp(child: ThemeSample()));
-  // runApp(const MyApp(child: ContainerSample()));
-  // runApp(const MyApp(child: GradientMagicSample()));
-  // runApp(const MyApp(child: ColumnSample()));
-  // runApp(const MyApp(child: TextSample()));
-  // runApp(const MyApp(child: IconSample()));
-  // runApp(const MyApp(child: ImageSample()));
-  // runApp(const MyApp(child: ImageFitSample()));
-  // runApp(const MyApp(child: SvgSample()));
-  // runApp(const MyApp(child: DrawSample()));
-  // runApp(const MyApp(child: ButtonSample()));
-  // runApp(const MyApp(child: CustomPainterSample()));
-  // runApp(const MyApp(child: TransformSample()));
-  // runApp(const MyApp(child: StackSample()));
+  // runApp(MyApp());
+  // runApp(MyApp(child: ThemeSample()));
+  // runApp(MyApp(child: ContainerSample()));
+  // runApp(MyApp(child: GradientMagicSample()));
+  // runApp(MyApp(child: ColumnSample()));
+  // runApp(MyApp(child: TextSample()));
+  // runApp(MyApp(child: IconSample()));
+  // runApp(MyApp(child: ImageSample()));
+  // runApp(MyApp(child: ImageFitSample()));
+  // runApp(MyApp(child: SvgSample()));
+  // runApp(MyApp(child: DrawSample()));
+  // runApp(MyApp(child: ButtonSample()));
+  // runApp(MyApp(child: CustomPainterSample()));
+  // runApp(MyApp(child: TransformSample()));
+  // runApp(MyApp(child: StackSample()));
   // setPreferredOrientations();
-  // runApp(const MyApp(child: MediaQuerySample()));
-  // runApp(const MyApp(child: InheritedWidgetSample()));
-  // runApp(const MyApp(child: FutureBuilderSample()));
-  // runApp(const MyApp(child: ListViewSample()));
-  // runApp(const MyApp(child: GridViewSample()));
-  // runApp(const MyApp(child: SliverViewSample()));
-  // runApp(const MyApp(child: ListViewStatefulSample()));
-  // runApp(const MyApp(
+  // runApp(MyApp(child: MediaQuerySample()));
+  // runApp(MyApp(child: InheritedWidgetSample()));
+  // runApp(MyApp(child: FutureBuilderSample()));
+  // runApp(MyApp(child: ListViewSample()));
+  // runApp(MyApp(child: GridViewSample()));
+  // runApp(MyApp(child: SliverViewSample()));
+  // runApp(MyApp(child: ListViewStatefulSample()));
+  // runApp(MyApp(
   //   child: BlocBuilderSample(),
   //   enableBloc: true,
   // ));
-  // runApp(const MyApp(
+  // runApp(MyApp(
   //   child: ListViewWithBlocBuilderSample(),
   //   enableBloc: true,
   // ));
-  runApp(MyApp(navigator: buildNavigator()));
+  // runApp(MyApp(
+  //   child: BlocBuilder4CubitSample(),
+  //   enableCubit: true,
+  // ));
+  // runApp(MyApp(navigator: buildNavigator()));
 }
