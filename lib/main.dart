@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myfirstapp/widgets/main/app.dart';
 import 'package:myfirstapp/widgets/navigation/build_navigator.dart';
+import 'package:myfirstapp/widgets/samples/animation_sample.dart';
 import 'package:myfirstapp/widgets/samples/bloc_sample/bloc_builder_sample.dart';
 import 'package:myfirstapp/widgets/samples/bloc_sample/list_view_with_bloc_builder_sample.dart';
 import 'package:myfirstapp/widgets/samples/cubit_sample/bloc_builder_4_cubit_sample.dart';
@@ -38,6 +39,10 @@ void main() {
   // runApp(MyApp(child: GridViewSample()));
   // runApp(MyApp(child: SliverViewSample()));
   // runApp(MyApp(child: ListViewStatefulSample()));
+  runApp(MyApp(
+      child: const AnimiereContainer(
+    defaultSize: 20,
+  )));
   // runApp(MyApp(
   //   child: BlocBuilderSample(),
   //   enableBloc: true,
