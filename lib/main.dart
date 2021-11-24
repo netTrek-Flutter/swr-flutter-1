@@ -39,10 +39,10 @@ void main() {
   // runApp(MyApp(child: GridViewSample()));
   // runApp(MyApp(child: SliverViewSample()));
   // runApp(MyApp(child: ListViewStatefulSample()));
-  runApp(MyApp(
-      child: const AnimiereContainer(
-    defaultSize: 20,
-  )));
+  // runApp(MyApp(
+  //     child: const AnimiereContainer(
+  //   defaultSize: 20,
+  // )));
   // runApp(MyApp(
   //   child: BlocBuilderSample(),
   //   enableBloc: true,
@@ -55,5 +55,5 @@ void main() {
   //   child: BlocBuilder4CubitSample(),
   //   enableCubit: true,
   // ));
-  // runApp(MyApp(navigator: buildNavigator()));
+  runApp(MyApp(navigator: buildNavigator()));
 }

@@ -15,16 +15,24 @@ Navigator buildNavigator() {
   return Navigator(
     initialRoute: page_image,
     onGenerateRoute: (routeSettings) {
-      switch (routeSettings.name) {
+      final Uri uri = Uri.parse('${routeSettings.name ?? ''}/1');
+      final String path =
+          uri.pathSegments.isNotEmpty ? uri.pathSegments.elementAt(0) : '';
+      switch (path) {
         case page_image:
           return MaterialPageRoute(
               builder: (context) => buildScaffold(
                   child: const ImageFitSample(),
                   appBarTitle: routeSettings.name));
         case page_list:
+          int? selected;
+          try {
+            selected = int.tryParse(uri.pathSegments.elementAt(1), radix: 10);
+          } catch (err) {}
+          print(selected);
           return MaterialPageRoute(
               builder: (context) => buildScaffold(
-                  child: const ListViewStatefulSample(),
+                  child: ListViewStatefulSample(selected: selected),
                   appBarTitle: routeSettings.name));
         case page_gird:
           return MaterialPageRoute(

@@ -4,14 +4,15 @@ import 'package:myfirstapp/widgets/services/post_model.dart';
 import 'package:myfirstapp/widgets/services/rest.dart';
 
 class ListViewStatefulSample extends StatefulWidget {
-  const ListViewStatefulSample({Key? key}) : super(key: key);
+  final int? selected;
+  const ListViewStatefulSample({Key? key, this.selected}) : super(key: key);
 
   @override
   _ListViewStatefulSampleState createState() => _ListViewStatefulSampleState();
 }
 
 class _ListViewStatefulSampleState extends State<ListViewStatefulSample> {
-  int? selected;
+  late int? selected = widget.selected;
 
   @override
   Widget build(BuildContext context) {
