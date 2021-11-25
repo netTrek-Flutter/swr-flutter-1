@@ -5,6 +5,16 @@ import 'package:myfirstapp/widgets/samples/animation_sample.dart';
 import 'package:myfirstapp/widgets/samples/bloc_sample/bloc_builder_sample.dart';
 import 'package:myfirstapp/widgets/samples/bloc_sample/list_view_with_bloc_builder_sample.dart';
 import 'package:myfirstapp/widgets/samples/cubit_sample/bloc_builder_4_cubit_sample.dart';
+import 'package:myfirstapp/widgets/samples/custom_painter_sample.dart';
+import 'package:myfirstapp/widgets/samples/draw_sample.dart';
+import 'package:myfirstapp/widgets/samples/futur_builder_sample.dart';
+import 'package:myfirstapp/widgets/samples/image_sample.dart';
+import 'package:myfirstapp/widgets/samples/inherited_widget_sample.dart';
+import 'package:myfirstapp/widgets/samples/list_view_statefull_sample.dart';
+import 'package:myfirstapp/widgets/samples/media_query_sample.dart';
+import 'package:myfirstapp/widgets/samples/stack_sample.dart';
+import 'package:myfirstapp/widgets/samples/svg_sample.dart';
+import 'package:myfirstapp/widgets/samples/transform_sample.dart';
 
 /**
  * AUFGABE
@@ -38,7 +48,7 @@ void main() {
   // runApp(MyApp(child: ListViewSample()));
   // runApp(MyApp(child: GridViewSample()));
   // runApp(MyApp(child: SliverViewSample()));
-  // runApp(MyApp(child: ListViewStatefulSample()));
+  runApp(MyApp(child: ListViewStatefulSample()));
   // runApp(MyApp(
   //     child: const AnimiereContainer(
   //   defaultSize: 20,

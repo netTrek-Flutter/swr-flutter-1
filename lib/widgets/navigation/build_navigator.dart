@@ -15,6 +15,7 @@ Navigator buildNavigator() {
   return Navigator(
     initialRoute: page_image,
     onGenerateRoute: (routeSettings) {
+      // simuliere das immer das Parameter 1 übergeben wird!
       final Uri uri = Uri.parse('${routeSettings.name ?? ''}/1');
       final String path =
           uri.pathSegments.isNotEmpty ? uri.pathSegments.elementAt(0) : '';

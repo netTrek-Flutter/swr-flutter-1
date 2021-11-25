@@ -61,11 +61,11 @@ class ContainerSample extends StatelessWidget {
             width: 5.0,
           ),
         ),
-        // borderRadius: BorderRadius.only(
-        //   bottomLeft: Radius.circular(
-        //     20,
-        //   ),
-        // ),
+        borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(
+            20,
+          ),
+        ),
         // borderRadius: BorderRadius.all(
         //   Radius.circular(20),
         // ),
